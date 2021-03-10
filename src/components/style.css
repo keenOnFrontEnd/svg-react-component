@@ -1,0 +1,71 @@
+.pos-abs {
+    position: absolute;
+}
+.overflow-hidden {
+    overflow: hidden;
+}
+.border {
+    border: 1px solid black;
+}
+
+.text-decoration {
+    font-size: 12px;
+    font-family: Rubik, sans-serif;;
+}
+.container {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    border: 1px solid;
+    justify-content: center;
+
+}
+.form-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+}
+.form-container > div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    font-size: 15px;
+}
+.button {
+    font-size: 15px;
+    width: 150px;
+    text-align: center;
+    height: 40;    
+    position: relative;
+    display: inline-block;
+}
+.button > input{
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100px;
+}
+.danger {
+    background-color: red;
+    color: #fff;
+}
+.info {
+    background-color: slateblue;
+    color: #fff;
+}
+
+@media(max-width: 1320px){
+
+    .form-container > div {
+        flex-direction: column;
+        height: 100px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
